@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InstagramClone-1</string>
+    <string name="submit">Submit</string>
+    <string name="todo">TODO</string>
+    <string name="take_picture">TAKE PICTURE</string>
+    <string name="description">Description</string>
+</resources>
