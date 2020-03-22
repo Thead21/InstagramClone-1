@@ -4,4 +4,9 @@
     <string name="todo">TODO</string>
     <string name="take_picture">TAKE PICTURE</string>
     <string name="description">Description</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="instagramclone">InstagramClone</string>
+    <string name="login">LOGIN</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
