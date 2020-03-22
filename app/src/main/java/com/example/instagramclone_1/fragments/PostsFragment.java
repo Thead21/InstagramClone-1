@@ -21,7 +21,6 @@ import com.parse.ParseException;
 import com.parse.ParseQuery;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -29,11 +28,9 @@ import java.util.List;
  */
 public class PostsFragment extends Fragment {
 
-    public static final String TAG = "PostsFragment";
-    private RecyclerView rvPosts;
-    private Post[] posts;
-    protected PostsAdapter adapter;
-    protected List<Post> allPosts;
+    static final String TAG = "PostsFragment";
+    PostsAdapter adapter;
+    List<Post> allPosts;
 
     public PostsFragment() {
         // Required empty public constructor
@@ -50,7 +47,7 @@ public class PostsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        rvPosts = view.findViewById(R.id.rvPosts);
+        RecyclerView rvPosts = view.findViewById(R.id.rvPosts);
 
         allPosts = new ArrayList<>();
         adapter = new PostsAdapter(getContext(), allPosts);
@@ -72,8 +69,6 @@ public class PostsFragment extends Fragment {
         query.setLimit(20);
         query.addDescendingOrder(Post.KEY_CREATED_AT);
         query.findInBackground(new FindCallback<Post>() {
-            private Object Post;
-
 
             @Override
             public void done(List<Post> posts, ParseException e) {
