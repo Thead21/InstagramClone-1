@@ -29,8 +29,8 @@ import java.util.List;
 public class PostsFragment extends Fragment {
 
     static final String TAG = "PostsFragment";
-    PostsAdapter adapter;
-    List<Post> allPosts;
+    protected PostsAdapter adapter;
+    protected List<Post> allPosts;
 
     public PostsFragment() {
         // Required empty public constructor

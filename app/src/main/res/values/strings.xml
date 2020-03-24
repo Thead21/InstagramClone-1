@@ -1,13 +1,15 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">InstagramClone-1</string>
-    <string name="submit">Submit</string>
+    <string name="submit" tools:keep="@string/submit">Submit</string>
     <string name="todo">TODO</string>
-    <string name="take_picture">TAKE PICTURE</string>
-    <string name="description">Description</string>
+    <string name="take_picture" tools:keep="@string/take_picture">TAKE PICTURE</string>
+    <string name="description" tools:keep="@string/description">Description</string>
     <string name="password">password</string>
     <string name="username">username</string>
     <string name="instagramclone">InstagramClone</string>
     <string name="login">LOGIN</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="textview">TextView</string>
+    <string name="hello_blank_fragment" tools:keep="@string/hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="compose">Compose</string>
+    <string name="profile">Profile</string>
 </resources>

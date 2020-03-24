@@ -10,9 +10,9 @@
     <TextView
         android:id="@+id/etDescription"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginBottom="18dp"
-        android:text="@string/description"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Description"
         tools:layout_editor_absoluteX="36dp" />
 
     <Button
@@ -21,12 +21,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/take_picture"
+        android:text="Take Picture"
         tools:layout_editor_absoluteX="0dp" />
 
     <ImageView
         android:id="@+id/ivPostImage"
-        android:layout_width="76dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginStart="141dp"
         android:layout_marginTop="1dp"
@@ -38,9 +38,9 @@
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="@string/submit"/>
+        android:text="Submit" />
 
 
 </LinearLayout>
