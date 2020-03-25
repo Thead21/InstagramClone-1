@@ -22,7 +22,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
 
     public PostsAdapter(Context context, List<Post> allPosts) {
         this.context = context;
-        this.posts = posts;
+        this.posts = allPosts;
     }
 
     @NonNull
